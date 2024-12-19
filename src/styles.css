@@ -1,0 +1,311 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+          ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* for all */
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+  max-width: 1360px;
+  width: 60.1%;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* css */
+body {
+  background: linear-gradient(to right, #60d0d1 0%, #56a9dd 100%);
+}
+
+.body-section .wrapper {
+  width: 25%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 10% 39%;
+}
+
+.parent h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tasklist_child_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box {
+  width: 87%;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin: 20px 7px 20px 0px;
+  border-radius: 5px;
+}
+
+.add_task_btn {
+  padding: 12px;
+  background-color: #8f48eb;
+  border-radius: 5px;
+  border: 2px solid #8f48eb;
+}
+
+.remove_btn {
+  background-color: red;
+}
+
+.edit_btn {
+  background-color: #8f48eb;
+  margin-right: 10px;
+}
+
+.clear_all_btn {
+  background-color: #8f48eb;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #8f48eb;
+  cursor: pointer;
+}
+
+.clear_all_btn:hover {
+  background-color: white;
+  border: 2px solid #8f48eb;
+  color: #8f48eb;
+}
+
+.remaining_tasks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+/* add icon */
+.plus_icon {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.remove_icon {
+  color: white;
+}
+
+.tasklist_child_1 li {
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tasklist_child_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasklist_child_2 button {
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+}
